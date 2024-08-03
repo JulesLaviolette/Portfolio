@@ -1,0 +1,35 @@
+@import "header";
+@import "single";
+@import "acceuil";
+
+@font-face {
+    font-family: 'Oswald';
+    src: url("fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+:root {
+    --gris-fonce: #4A4A4A;
+}
+html, body {
+    margin: 0px !important;
+    font-family: "Oswald", sans-serif;
+}
+
+h1,h2,h3,h4 {
+    color: var(--gris-fonce);
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+}
+
+@keyframes fade__in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

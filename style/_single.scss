@@ -1,0 +1,105 @@
+.single {
+    &__nav {
+        display: flex;
+        flex-direction: row;
+
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        gap: 10px;
+
+        &-arrow {
+        background-color: var(--gris-fonce);
+        border-radius: 20px;
+        max-width: 50px;
+        padding: 15px;
+        }
+
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+
+        &-content {
+            position: absolute;
+            left: 30%;
+            transform: translateX(-30%);
+
+            p {
+                margin-bottom: 100px;
+            }
+
+        }
+
+        &-image {
+            max-width: 40%;
+            max-height: 900px;
+        }
+
+        &-button {
+            background-color: var(--gris-fonce);
+            border-radius: 20px;
+            padding: 20px;
+
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        margin-bottom: 200px;
+
+        animation: fade_in 2s forwards;
+
+        &-1 {
+            flex-direction: row-reverse;
+
+            text-align: center;
+
+            .single__content-text {
+                align-content: center;
+                padding: 0px 200px;
+            }
+
+            img {
+                max-width: 40%;
+                max-height: 1000px;
+                object-fit: contain;
+            }
+        }
+
+        &-2 {
+            flex-direction: column;
+
+            padding: 0px 50px 0px 300px;
+
+            .single__content-text {
+                text-align: center;
+            }
+
+            img {
+                max-height: 600px;
+                object-fit: contain;
+            }
+        }
+
+        &-3 {
+            .single__content-text {
+                text-align: center;
+                padding: 0px 150px 0px 300px;
+            }
+
+            img {
+                max-width: 40%;
+                max-height: 1000px;
+                object-fit: contain;
+            }
+        }
+
+    }
+}
